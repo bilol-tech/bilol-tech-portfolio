@@ -1,0 +1,36 @@
+/* Basic styles for gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    display: none; /* Hide all items initially */
+    flex: 1 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.gallery__item:nth-child(-n+4) {
+    display: block; /* Show only the first 4 items */
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-hover:hover {
+    background-color: #ddd;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .gallery__item {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
