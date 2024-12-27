@@ -286,6 +286,19 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+.download-icon {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  gap: 8px;
+  text-decoration: none;
+  color: #ffffff; /* Adjust to match your design */
+}
+.download-icon:hover {
+  text-decoration: underline;
+}
+
+
 ::-moz-selection {
   background-color: var(--secondary-rgba);
   color: var(--t-bright);
